@@ -1,0 +1,63 @@
+.btn {
+	display: inline-block;
+	padding: .85em 1.65em;
+	width: auto;
+	border: none;
+	border-radius: 0;
+	background-color: $orange;
+	color: $white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: .95em;
+	font-family: $heading;
+	line-height: 1;
+	cursor: pointer;
+	transition: all $transition-time;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.btn-icon {
+	padding: 0;
+	background-color: transparent;
+
+	i,
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	i {
+		color: $orange;
+		font-size: 1.5em;
+	}
+
+	span {
+		margin-left: .25em;
+		color: $text;
+		text-transform: lowercase;
+		font-size: .9em;
+		font-family: $heading;
+	}
+}
+
+.btn-bordered {
+	padding: .5em 1.5em;
+	border: 1px solid $white;
+	font-size: .75em;
+}
+
+.btn-facebook {
+	background-color: $facebook;
+
+	i {
+		color: $white;
+	}
+
+	span {
+		color: $white;
+		text-transform: uppercase;
+	}
+}

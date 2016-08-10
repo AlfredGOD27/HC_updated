@@ -1,0 +1,88 @@
+$animation-base-speed: .125s;
+
+@keyframes shake {
+	from,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	20%,
+	60% {
+		transform: translate3d(-.5em, 0, 0);
+	}
+
+	40%,
+	80% {
+		transform: translate3d(.5em, 0, 0);
+	}
+}
+
+.shake {
+	animation-name: shake;
+}
+
+.animated {
+	animation-duration: .25s;
+	animation-fill-mode: both;
+}
+
+@keyframes six-step-small {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: (-6 * 40px);
+	}
+}
+
+@keyframes six-step-large {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: (-6 * 70px);
+	}
+}
+
+.animation {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	transition: none;
+	animation-duration: ($animation-base-speed * 6);
+	animation-timing-function: steps(6);
+
+	&.animation-small.run {
+		animation-name: six-step-small;
+	}
+
+	&.animation-large.run {
+		animation-name: six-step-large;
+	}
+}
+
+.animation-small {
+	width: 40px;
+	height: 40px;
+}
+
+.animation-large {
+	width: 70px;
+	height: 70px;
+}
+
+$animation-colors: 'orange' 'white';
+$animation-names: 'calendar' 'connect' 'directory' 'drinks' 'food' 'hacks' 'hitlist' 'recharge' 'shopping' 'travel' 'video' 'win';
+
+@each $color in $animation-colors {
+	@each $name in $animation-names {
+		.animation-#{$name}-#{$color} {
+			&.animation-small {
+				background-image: url('../images/animations/#{$name}-40-#{$color}.png');
+			}
+
+			&.animation-large {
+				background-image: url('../images/animations/#{$name}-70-#{$color}.png');
+			}
+		}
+	}
+}

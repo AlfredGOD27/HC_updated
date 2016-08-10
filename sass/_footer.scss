@@ -1,0 +1,182 @@
+.site-footer {
+	padding-top: 3em;
+	padding-bottom: 2.5em;
+	background-color: $black;
+	color: $white;
+	text-align: center;
+
+	> .wrap {
+		@extend %wrap;
+	}
+
+	p {
+		text-transform: uppercase;
+		font-size: .85em;
+	}
+}
+
+@include media('<=portrait') {
+	.site-footer {
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+
+		p {
+			font-size: .75em;
+		}
+	}
+}
+
+.footer-social-row {
+	display: flex;
+	margin-bottom: 2.5em;
+
+	.left {
+		flex-grow: 0;
+		flex-shrink: 0;
+		float: left;
+		padding-right: .75em;
+		width: (100% / 8);
+		width: ($site-width / 8);
+	}
+
+	.ico-instagram-logo {
+		display: block;
+		margin-bottom: .1em;
+		font-size: 2em;
+	}
+
+	.instagram-link {
+		@include meta-font;
+		display: block;
+		margin-bottom: 2.5em;
+		text-decoration: none;
+		font-size: 1.1em;
+	}
+
+	h4 {
+		margin-bottom: .5em;
+		text-transform: uppercase;
+		font-size: .9em;
+	}
+
+	.social {
+		a {
+			color: inherit;
+		}
+	}
+
+	.right {
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 1;
+		float: right;
+		padding-left: .75em;
+		width: (100% / 8 * 7);
+
+		> div {
+			float: left;
+			width: (100% / 7);
+		}
+
+		img {
+			display: block;
+		}
+	}
+}
+
+@include media('<=portrait') {
+	.footer-social-row {
+		flex-direction: column-reverse;
+		align-items: center;
+
+		.left {
+			float: none;
+			padding-right: 0;
+			width: 100%;
+		}
+
+		.ico-instagram-logo {
+			margin-bottom: 0;
+			font-size: 1.5em;
+		}
+
+		.instagram-link {
+			margin-bottom: 1em;
+		}
+
+		.right {
+			display: block;
+			float: none;
+			padding-left: 0;
+			width: 100%;
+
+			> div {
+				margin-bottom: .75em;
+				width: 33.33%;
+			}
+		}
+	}
+}
+
+.favicon-row {
+	margin-bottom: 2em;
+	height: 1px;
+	background-color: $white;
+
+	i {
+		display: inline-block;
+		padding: 0 .25em;
+		background-color: $black;
+		font-size: 2.75em;
+		transform: translateY(-50%);
+	}
+}
+
+@include media('<=portrait') {
+	.footer-bottom {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+
+		p {
+			margin-bottom: 2.5em;
+		}
+	}
+}
+
+.footer-menu {
+	margin-bottom: 2em;
+	font-family: $heading;
+
+	li {
+		display: inline-block;
+		margin-left: 2.5em;
+		vertical-align: middle;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: .9em;
+		}
+	}
+}
+
+@include media('<=portrait') {
+	.footer-menu {
+		li {
+			display: block;
+			margin-bottom: 1em;
+			margin-left: 0;
+			text-align: center;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.social {
+	a {
+		display: inline-block;
+		margin-left: .5em;
+		vertical-align: middle;
+		text-decoration: none;
+		font-size: 1.5em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+@include media('<=portrait') {
+	.social {
+		a {
+			font-size: 1.25em;
+		}
+	}
+}

@@ -1,0 +1,83 @@
+.messages {
+	margin-bottom: 1.75em;
+	max-width: 60em;
+
+	&:empty {
+		display: none;
+	}
+}
+
+.alert {
+	@extend %clearfix;
+	position: relative;
+	display: block;
+	clear: both;
+	margin: 0 0 1em;
+	padding: 1em 1em 1em 4em;
+	border-top-width: .25em;
+	border-top-style: solid;
+	border-right: 1px solid $grey-border;
+	border-bottom: 1px solid $grey-border;
+	border-left: 1px solid $grey-border;
+	background-color: $white;
+	text-align: left;
+	font-size: .9em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 1em;
+		display: block;
+		padding-top: 1em;
+		width: 1.5em;
+		height: 2.5em;
+		color: $white;
+		content: '';
+		text-align: center;
+		font-size: 1em;
+		font-family: sans-serif;
+		line-height: 1.5;
+	}
+
+	a {
+		color: $text;
+		text-decoration: underline;
+	}
+}
+
+.alert-success {
+	border-top-color: $successText;
+	color: $successText;
+
+	&:before {
+		background-color: $successText;
+		content: '\2713';
+	}
+}
+
+.alert-error {
+	border-top-color: $errorText;
+	color: $errorText;
+
+	&:before {
+		background-color: $errorText;
+		content: '\00d7';
+		font-weight: bold;
+	}
+}
+
+.alert-info {
+	border-top-color: $infoText;
+	color: $infoText;
+
+	&:before {
+		background-color: $infoText;
+		content: 'i';
+		font-style: italic;
+		font-family: Times, Georgia, serif;
+	}
+}

@@ -1,0 +1,88 @@
+table {
+	margin-bottom: $spacer;
+	width: 100%;
+	border-collapse: separate;
+	table-layout: fixed;
+
+	th,
+	td {
+		padding: .25em .5em;
+		text-align: left;
+		word-break: break-word;
+		line-height: 1.3;
+	}
+
+	> thead {
+		> tr {
+			> th {
+				color: $orange;
+				vertical-align: bottom;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				vertical-align: top;
+				font-size: .9em;
+			}
+
+			> th {
+				text-transform: uppercase;
+
+				a {
+					color: inherit;
+					text-decoration: none;
+				}
+			}
+
+			> td {
+				@include meta-font;
+			}
+		}
+	}
+
+
+	> tbody {
+		> tr {
+			&:nth-child(odd) {
+				> td,
+				> th {
+					background-color: #fff9f4;
+				}
+			}
+		}
+	}
+}
+
+@include media('<=portrait') {
+	table.responsive {
+		> thead {
+			display: none;
+		}
+
+		tr {
+			display: block;
+
+			> th {
+				display: block;
+			}
+
+			> td {
+				display: block;
+
+				&:before {
+					content: attr(data-title) ': ';
+				}
+
+				&:empty {
+					display: none;
+				}
+			}
+		}
+	}
+}

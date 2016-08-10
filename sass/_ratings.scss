@@ -1,0 +1,115 @@
+.stars {
+	a {
+		position: relative;
+		display: inline-block;
+		margin-left: .25em;
+		width: 1em;
+		height: 1em;
+		color: $orange;
+		text-indent: -999em;
+		font-size: 1.5em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:before {
+			@extend %ico;
+			@extend .ico-star-o:before;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 1em;
+			height: 1em;
+			text-indent: 0;
+			line-height: 1;
+		}
+
+		&:hover {
+			~ a:before {
+				@extend .ico-star-o:before;
+			}
+		}
+	}
+
+	&:hover {
+		a {
+			&:before {
+				@extend .ico-star:before;
+			}
+		}
+	}
+
+	&.selected {
+		a.active {
+			&:before {
+				@extend .ico-star:before;
+			}
+
+			~ a:before {
+				@extend .ico-star-o:before;
+			}
+		}
+
+		a:not(.active) {
+			&:before {
+				@extend .ico-star:before;
+			}
+		}
+	}
+}
+
+.star-rating-container {
+	margin-bottom: 1.25em;
+	padding-bottom: 1.25em;
+	border-bottom: 1px solid $grey-border;
+
+	> div,
+	> span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	> span {
+		@include meta-font;
+		margin-left: .75em;
+		font-size: .95em;
+	}
+}
+
+.star-rating {
+	position: relative;
+	overflow: hidden;
+	width: 5.25em;
+	height: 1em;
+	color: $orange;
+	font-size: 1.5em;
+	line-height: 1;
+
+	&:before {
+		@extend %ico;
+		@extend .ico-star-five-o:before;
+		position: absolute;
+		top: 0;
+		left: 0;
+		float: left;
+	}
+
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		float: left;
+		overflow: hidden;
+		padding-top: 1.5em;
+
+		&:before {
+			@extend %ico;
+			@extend .ico-star-five:before;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}

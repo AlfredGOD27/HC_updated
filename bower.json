@@ -1,0 +1,23 @@
+{
+  "name": "genesis-hc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "colors-sass": "mrmrs/colors-sass",
+    "include-media-export": "*",
+    "include-media": "*",
+    "iOS-Orientationchange-Fix": "scottjehl/iOS-Orientationchange-Fix",
+    "jquery.fitvids": "davatron5000/FitVids.js",
+    "js-cookie": "js-cookie/js-cookie",
+    "normalize-scss": "*",
+    "magnific-popup": "dimsemenov/Magnific-Popup",
+    "slick-carousel": "*",
+    "pikaday": "dbushell/Pikaday",
+    "moment": "moment/moment"
+  }
+}

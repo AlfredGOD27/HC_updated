@@ -1,0 +1,50 @@
+{
+    "key": "group_56fc1d3c1fba7",
+    "title": "Widget \/\/ Ad",
+    "fields": [
+        {
+            "key": "field_56fc1d406e5d8",
+            "label": "Ad Position",
+            "name": "_hc_ad_position",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "mpu-1": "mpu-1",
+                "mpu-2": "mpu-2"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "hc_ad_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1463159435
+}

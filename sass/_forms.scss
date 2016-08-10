@@ -1,0 +1,271 @@
+label {
+	display: block;
+	margin-bottom: .5em;
+	color: #5e5e5e;
+	text-transform: uppercase;
+	font-size: .9em;
+	font-family: $heading;
+
+	&.checkbox {
+		@include meta-font;
+		text-transform: none;
+		cursor: pointer;
+
+		input[type='checkbox'] {
+			margin-right: .5em;
+		}
+	}
+
+	&.radio {
+		@include meta-font;
+		text-transform: none;
+		cursor: pointer;
+
+		input[type='radio'] {
+			margin-right: .5em;
+		}
+	}
+}
+
+input:focus,
+textarea:focus {
+	// outline: none;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='search'],
+input[type='email'],
+input[type='url'],
+input[type='number'],
+input[type='file'],
+textarea {
+	padding: .5em;
+	max-width: 100%;
+	width: 100%;
+	border: 1px solid #c6c7c8;
+	border-radius: 0;		 // Removes the border radius on iOS
+	color: $black;
+	font-size: .85em;
+	-webkit-appearance: none; // Removes the shadow on iOS
+	-moz-appearance: none;
+}
+
+input[type='file'] {
+	width: auto;
+}
+
+// Hide the spinner on input[type="number"] in Firefox
+input[type='number'] {
+	// -moz-appearance:textfield;
+}
+
+// Hide the spinner on input[type="number"] in Chrome/Safari
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	// -webkit-appearance: none;
+}
+
+textarea {
+	resize: vertical; // Allow only vertical resizing of textareas.
+}
+
+select {
+	width: 100%;
+
+	&.styled {
+		padding: .5em;
+		border: 1px solid #c6c7c8;
+		border-radius: 0;
+		background-color: $white;
+		color: $black;
+		font-size: .85em;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+}
+
+.checkbox,
+.radio {
+	display: flex;
+	align-items: center;
+}
+
+input[type='checkbox'] {
+	width: 1em;
+	height: 1em;
+	border: 1px solid $orange;
+	background-color: $white;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	&:checked {
+		background-color: $orange;
+	}
+}
+
+input[type='radio'] {
+	width: 1em;
+	height: 1em;
+	border: 1px solid $orange;
+	border-radius: 50%;
+	background-color: $white;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	&:checked {
+		background-color: $orange;
+	}
+}
+
+.required {
+	color: $orange;
+}
+
+.placeholder {
+	@include meta-font;
+	color: #c7c7c7;
+	text-overflow: ellipsis;
+}
+
+::placeholder {
+	@include meta-font;
+	color: #c7c7c7;
+	text-overflow: ellipsis;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@extend .btn;
+}
+
+input[type='search'] {
+	box-sizing: border-box; // Overrides normalize.css
+}
+
+.search-form,
+.post-password-form {
+	display: flex;
+	align-items: center;
+	max-width: 28em;
+	width: 100%;
+	border: 1px solid transparent;
+}
+
+.search-form {
+	position: relative;
+
+	i {
+		position: absolute;
+		top: 50%;
+		left: .55em;
+		color: $orange;
+		transform: translateY(-50%);
+	}
+
+	input[type='search'] {
+		flex: 1;
+		padding-left: 2.5em;
+		border-color: $orange;
+	}
+
+	input[type='submit'] {
+		margin-left: 1px;
+		padding: .65em 1em;
+	}
+}
+
+.post-password-form {
+	input[type='password'] {
+		flex: 1;
+	}
+
+	input[type='submit'] {
+		margin-left: .25em;
+	}
+}
+
+.hc-form {
+	margin-bottom: 1.75em;
+	max-width: 60em;
+
+	.form-header {
+		margin-bottom: 1.5em;
+
+		h2 {
+			color: inherit;
+			text-transform: uppercase;
+			font-size: 1.25em;
+		}
+	}
+
+	.field {
+		margin-bottom: 1.5em;
+	}
+
+	.description {
+		padding-top: 1em;
+
+		p {
+			@include meta-font;
+			@extend %type;
+			color: #5e5e5e;
+			font-size: .8em;
+		}
+	}
+
+	.field-select {
+		> div {
+			position: relative;
+		}
+
+		.ico-arrow-down {
+			position: absolute;
+			top: 50%;
+			right: 1em;
+			font-size: .75em;
+			transform: translateY(-50%);
+			pointer-events: none;
+		}
+	}
+
+	.field-file {
+		&.round-image {
+			.image-preview {
+				display: flex;
+				align-items: center;
+			}
+
+			img {
+				border: $border-width solid $orange;
+				border-radius: 50%;
+			}
+		}
+
+		&.block-image {
+			img {
+				display: block;
+				margin-bottom: 1em;
+			}
+		}
+
+		img {
+			margin-right: 1em;
+		}
+	}
+
+	.form-footer {
+		button[name='hc_delete'] {
+			float: right;
+			background-color: transparent;
+			color: $orange;
+		}
+	}
+}

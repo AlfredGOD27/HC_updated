@@ -1,0 +1,42 @@
+.subscribe-form {
+	position: relative;
+
+	&.processing {
+		opacity: .5;
+	}
+
+	.email-container {
+		position: relative;
+	}
+
+	input[type='email'] {
+		padding-right: 1.5em;
+	}
+
+	.result {
+		position: absolute;
+		top: .4em;
+		right: .4em;
+		display: block;
+		text-align: center;
+		font-style: normal;
+		font-size: 1.25em;
+		font-family: sans-serif;
+		line-height: 1;
+
+		&.success {
+			&:before {
+				color: $successText;
+				content: '\2713';
+			}
+		}
+
+		&.error {
+			&:before {
+				color: $errorText;
+				content: '\00d7';
+				font-weight: bold;
+			}
+		}
+	}
+}

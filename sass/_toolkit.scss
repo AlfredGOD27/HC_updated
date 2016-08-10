@@ -1,0 +1,60 @@
+// Use with @extend to make reponsive modules
+%wrap {
+	margin: 0 auto;
+	padding-right: .75em;
+	padding-left: .75em;
+	max-width: ($site-width + 1.5);
+	width: 100%;
+}
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+%image-replacement {
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+}
+
+.no-js {
+	.hide-no-js {
+		display: none !important;
+	}
+}
+
+%unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@include media('<=portrait') {
+	.hide-phone {
+		display: none;
+	}
+}
+
+.show-phone {
+	display: none;
+}
+
+@include media('<=portrait') {
+	.show-phone {
+		display: block;
+	}
+}
+
+%type {
+	margin-bottom: 2em;
+	letter-spacing: .01rem;
+	font-size: .9em;
+	line-height: 1.35;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@include media('<=portrait') {
+	%type {
+		margin-bottom: 1.5em;
+	}
+}

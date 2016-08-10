@@ -1,0 +1,76 @@
+html,
+body {
+	min-width: $site-width; // Prevents backgrounds on these elements from being truncated on smaller screens on fixed-width sites
+}
+
+@include media('<=portrait') {
+	html,
+	body {
+		min-width: 0;
+	}
+}
+
+body {
+	color: $text;
+	font-family: $body;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-variant-ligatures: common-ligatures;
+}
+
+@include media('<=portrait') {
+	body {
+		padding-top: 7.5em;
+	}
+
+	html[lang='en-US'] {
+		margin-top: 0 !important;
+	}
+
+	#wpadminbar {
+		display: none !important;
+	}
+}
+
+::selection {
+	// text-shadow: none;
+}
+
+a {
+	color: $orange;
+	text-decoration: underline;
+	transition: all $transition-time;
+}
+
+ol,
+ul {
+	@extend %unstyled-list;
+}
+
+p {
+	@extend %type;
+	margin-top: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+abbr {
+	letter-spacing: .1em;
+}
+
+pre {
+	overflow: scroll;
+	white-space: pre;
+}
+
+code {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+iframe {
+	border: none;
+}

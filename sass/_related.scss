@@ -1,0 +1,43 @@
+.related {
+	clear: both;
+
+	> .wrap {
+		@extend %wrap;
+	}
+
+	.block {
+		padding-top: 1em;
+		border-top: $border-width solid $black;
+	}
+
+	h2 {
+		margin-bottom: .5em;
+		text-transform: uppercase;
+		font-size: 1.25em;
+	}
+}
+
+@include media('<=portrait') {
+	.related {
+		.block {
+			border-bottom: $border-width solid $black;
+		}
+
+		.one-fourth {
+			float: left;
+			clear: none;
+			margin-bottom: 0;
+			margin-left: 2.564102564102564%;
+			width: 50%;
+			width: 48.717948717948715%;
+
+			&:nth-of-type(odd) {
+				margin-left: 0;
+			}
+		}
+
+		.archive-entry-small {
+			margin-bottom: 1em;
+		}
+	}
+}

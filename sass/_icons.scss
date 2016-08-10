@@ -1,0 +1,148 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'icons';
+	src: url('../../fonts/icons.ttf?su0lja') format('truetype'),
+	url('../../fonts/icons.woff?su0lja') format('woff'),
+	url('../../fonts/icons.svg?su0lja#icons') format('svg');
+}
+
+[class^='ico-'],
+[class*=' ico-'],
+%ico {
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icons' !important;
+	line-height: 1;
+	speak: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ico-close:before {
+	content: '\e90f';
+}
+
+.ico-star:before {
+	content: '\53';
+}
+
+.ico-star-five:before {
+	content: '\53\53\53\53\53';
+}
+
+.ico-star-o:before {
+	content: '\73';
+}
+
+.ico-star-five-o:before {
+	content: '\73\73\73\73\73';
+}
+
+.ico-book:before {
+	content: '\e921';
+}
+
+.ico-globe:before {
+	content: '\e922';
+}
+
+.ico-plus:before {
+	content: '\e923';
+}
+
+.ico-heart-filled:before {
+	content: '\e91f';
+}
+
+.ico-pin-filled:before {
+	content: '\e91e';
+}
+
+.ico-calendar:before {
+	content: '\e90e';
+}
+
+.ico-pin:before {
+	content: '\e91c';
+}
+
+.ico-play:before {
+	content: '\e91d';
+}
+
+.ico-hexagon:before {
+	content: '\e91a';
+}
+
+.ico-menu:before {
+	content: '\e91b';
+}
+
+.ico-arrow-right-circle:before {
+	content: '\e912';
+}
+
+.ico-instagram-logo:before {
+	content: '\e90d';
+}
+
+.ico-favicon:before {
+	content: '\e90c';
+}
+
+.ico-share:before {
+	content: '\e907';
+}
+
+.ico-instagram:before {
+	content: '\e905';
+}
+
+.ico-exit:before {
+	content: '\e901';
+}
+
+.ico-arrow-left:before {
+	content: '\e90a';
+}
+
+.ico-arrow-right:before {
+	content: '\e90b';
+}
+
+.ico-arrow-up:before {
+	content: '\e903';
+}
+
+.ico-arrow-down:before {
+	content: '\e900';
+}
+
+.ico-facebook:before {
+	content: '\e902';
+}
+
+.ico-heart:before {
+	content: '\e904';
+}
+
+.ico-search:before {
+	content: '\e906';
+}
+
+.ico-twitter:before {
+	content: '\e908';
+}
+
+.ico-youtube:before {
+	content: '\e909';
+}
+
+.ico-check:before {
+	content: '\e924';
+}

@@ -1,0 +1,74 @@
+{
+    "key": "group_56fc1b12e4b81",
+    "title": "Widget \/\/ Featured",
+    "fields": [
+        {
+            "key": "field_56fc1cfea6735",
+            "label": "Title",
+            "name": "_hc_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56fc1c616ffc5",
+            "label": "Post Type",
+            "name": "_hc_post_type",
+            "type": "select",
+            "instructions": "Featured listings are set on each category's page",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "event": "Events",
+                "listing": "Listings",
+                "post": "Posts"
+            },
+            "default_value": [
+                "post"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "hc_featured_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1465841915
+}

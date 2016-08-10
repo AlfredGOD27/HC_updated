@@ -1,0 +1,34 @@
+.slick-slider {
+	.slick-slide {
+		position: relative;
+		border: none;
+	}
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	padding: .9em .45em;
+	background-color: $grey-dark;
+	background-color: rgba( $grey-dark, .3 );
+	transform: translateY(-50%);
+
+	i {
+		font-size: 1.5em;
+	}
+}
+
+@include media('<=portrait') {
+	.slick-arrow {
+		font-size: .75em;
+	}
+}
+
+.slick-prev {
+	left: 0;
+}
+
+.slick-next {
+	right: 0;
+}

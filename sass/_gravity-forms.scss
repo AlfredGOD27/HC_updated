@@ -1,0 +1,141 @@
+.gform_wrapper {
+	max-width: 40em;
+
+	.gform_fields {
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 1.5em;
+			padding-left: 0;
+			list-style: none;
+
+			&.gform_hidden {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.gfield_with_placeholder {
+		.gfield_label {
+			@extend %visuallyhidden;
+		}
+	}
+
+	.ginput_complex {
+		@extend %clearfix;
+
+		.ginput_full,
+		.ginput_left,
+		.ginput_right,
+		.name_first,
+		.name_last {
+			display: block;
+
+			select,
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				width: 100%;
+			}
+		}
+
+		.ginput_left,
+		.ginput_right,
+		.name_first,
+		.name_last {
+			@extend .one-half;
+		}
+
+		.ginput_left,
+		.name_first {
+			@extend .first;
+		}
+
+		.ginput_full {
+			width: 100%;
+		}
+
+		label {
+			margin-bottom: 0;
+			font-weight: normal;
+			font-size: .95em;
+		}
+
+		.address_line_1,
+		.address_line_2,
+		.address_city,
+		.address_state,
+		.address_zip,
+		.address_country {
+			margin-bottom: .5em;
+		}
+	}
+
+	.gfield_radio,
+	.gfield_checkbox {
+		padding-left: 0;
+
+		li {
+			margin-bottom: 0;
+		}
+
+		label {
+			@include meta-font;
+			display: inline-block;
+			vertical-align: middle;
+			text-transform: none;
+			cursor: pointer;
+		}
+
+		input[type='radio'],
+		input[type='checkbox'] {
+			margin-right: .5em;
+		}
+	}
+
+	.gfield_required {
+		color: $orange;
+	}
+
+	.gform_page_footer {
+		@extend %clearfix;
+	}
+
+	input[type='submit'] {
+		@extend .btn;
+	}
+
+	.gform_ajax_spinner {
+		display: none !important;
+	}
+
+	.gfield_error {
+		margin-bottom: 1.5em;
+	}
+
+	.validation_error {
+		@extend .alert;
+		@extend .alert-error;
+	}
+
+	.validation_message {
+		@extend %type;
+		display: block;
+		clear: both;
+		margin-top: .25em;
+		color: $errorText;
+		font-size: .9em;
+	}
+
+	.gform_validation_container {
+		position: absolute !important;
+		left: -200%;
+		display: none !important;
+	}
+}
+
+.gform_confirmation_message {
+	@extend .alert;
+	@extend .alert-success;
+}

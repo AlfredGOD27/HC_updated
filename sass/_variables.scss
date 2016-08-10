@@ -1,0 +1,57 @@
+/*********************
+SIZES
+*********************/
+$spacer: 1.25em;
+$site-width: 80em; // Useful for fixed width sites, as well as for limiting the max-width of fluid sites
+$border-width: 3px;
+$transition-time: .25s;
+
+/*********************
+BREAKPOINTS
+*********************/
+$breakpoints: ( zero: (1 * 16px), phone: (35 * 16px), portrait: (48.5 * 16px), landscape: (64 * 16px), desktop: (80 * 16px) );
+
+/*********************
+COLORS
+*********************/
+$black: #252525;
+$text: #3a3a3a;
+$grey-border: #d7d7d7;
+$grey-light: #919191;
+$grey-lighter: #c7c7c7;
+$grey: #999;
+$grey-dark: #4f4f4f;
+$orange: #fe862c;
+$orange-light: #fad9bd;
+$orange-dark: #fa7d1f;
+
+/*********************
+ALERTS
+*********************/
+$errorText: #dc3232;
+$successText: #46b450;
+$infoText: #00a0d2;
+
+/*********************
+SOCIAL COLORS - http://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+*********************/
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$google: #dd4b39;
+$youtube: #b00;
+$pinterest: #cb2027;
+$tumblr: #32506d;
+$flickr: #ff0084;
+$instagram: #517fa4;
+$vimeo: #aad450;
+$foursquare: #0072b1;
+$rss: #f60;
+
+/*********************
+TYPOGRAPHY - http://cssfontstack.com/
+*********************/
+// https://medium.com/@mwichary/system-shock-6b1dc6d6596f
+$heading: 'Montserrat', Tahoma, Verdana, Segoe, sans-serif;
+$body: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$meta: 'Noto Serif', Georgia, Times, 'Times New Roman', serif;

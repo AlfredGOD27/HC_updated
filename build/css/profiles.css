@@ -1,0 +1,318 @@
+/*********************
+SIZES
+*********************/
+/*********************
+BREAKPOINTS
+*********************/
+/*********************
+COLORS
+*********************/
+/*********************
+ALERTS
+*********************/
+/*********************
+SOCIAL COLORS - http://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+*********************/
+/*********************
+TYPOGRAPHY - http://cssfontstack.com/
+*********************/
+.no-js .hide-no-js {
+  display: none !important;
+}
+
+@media (max-width: 776px) {
+  .hide-phone {
+    display: none;
+  }
+}
+.show-phone {
+  display: none;
+}
+
+@media (max-width: 776px) {
+  .show-phone {
+    display: block;
+  }
+}
+.profile-bookmarks-info p, .profile-boxes p {
+  margin-bottom: 2em;
+  letter-spacing: .01rem;
+  font-size: .9em;
+  line-height: 1.35;
+}
+.profile-bookmarks-info p:last-child, .profile-boxes p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 776px) {
+  .profile-bookmarks-info p, .profile-boxes p {
+    margin-bottom: 1.5em;
+  }
+}
+.profile .content {
+  margin-bottom: 1.75em;
+}
+
+.profile-heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.75em;
+  padding-bottom: 1.25em;
+  border-bottom: 2px solid #d7d7d7;
+}
+.profile-heading .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile-heading .left img {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 1em;
+  border: 3px solid #fe862c;
+  border-radius: 50%;
+}
+
+@media (max-width: 776px) {
+  .profile-heading {
+    display: block;
+  }
+}
+.profile-welcome {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+.profile-welcome span {
+  display: block;
+  margin-bottom: .25em;
+  color: #fe862c;
+}
+.profile-welcome h1,
+.profile-welcome h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.profile-welcome h1 a,
+.profile-welcome h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 776px) {
+  .profile-welcome h1,
+  .profile-welcome h2 {
+    font-size: 1.5em;
+  }
+}
+.profile-nav {
+  opacity: .5;
+}
+.profile-nav a {
+  display: inline-block;
+  color: inherit;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: .75em;
+}
+.profile-nav a:before {
+  margin-right: .5em;
+  margin-left: .25em;
+  content: '/';
+}
+.profile-nav a:first-child:before {
+  display: none;
+}
+
+.profile-bookmarks-info {
+  padding: .75em 1em;
+  border: 1px solid #fe862c;
+  background-color: #f7f8f9;
+  text-align: center;
+}
+.profile-bookmarks-info p {
+  font-size: .7em;
+}
+.profile-bookmarks-info i {
+  display: block;
+  margin-right: auto;
+  margin-bottom: .25em;
+  margin-left: auto;
+  color: #fe862c;
+  font-size: 1.5em;
+}
+.profile-bookmarks-info .orange {
+  font-family: "Noto Serif", Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  margin-bottom: .5em;
+  color: #fe862c;
+}
+.profile-bookmarks-info .black {
+  font-family: "Montserrat", Tahoma, Verdana, Segoe, sans-serif;
+}
+.profile-bookmarks-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 776px) {
+  .profile-bookmarks-info {
+    display: none;
+  }
+}
+.profile-boxes .box {
+  margin-bottom: 1.75em;
+  border: 1px solid #fe862c;
+}
+.profile-boxes .box.invert-colors .placeholder {
+  background-color: #fe862c;
+}
+.profile-boxes .box.invert-colors i {
+  color: #FFFFFF;
+}
+.profile-boxes a {
+  color: inherit;
+  text-decoration: none;
+}
+.profile-boxes .top {
+  position: relative;
+  display: block;
+  border-bottom: 3px solid #fe862c;
+  color: inherit;
+  text-align: center;
+}
+.profile-boxes .top img {
+  display: block;
+  max-width: none;
+  width: 100%;
+}
+.profile-boxes .top .placeholder {
+  padding-bottom: 68.5%;
+  width: 100%;
+  background-color: #f7f8f9;
+}
+.profile-boxes .top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  color: #fe862c;
+  font-size: 4.5em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.profile-boxes .bottom {
+  padding: 1.25em 1em;
+  text-align: center;
+}
+.profile-boxes h3 {
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+.profile-boxes p {
+  font-family: "Noto Serif", Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  margin-bottom: 1em;
+  font-size: .9em;
+}
+.profile-boxes p:last-child {
+  margin-bottom: 0;
+}
+
+.profile-page-title {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+.folders-list {
+  padding-right: 1em;
+}
+.folders-list hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid #3a3a3a;
+}
+.folders-list h4 {
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.folders-list h4 i {
+  margin-right: .5em;
+  font-size: .5em;
+}
+.folders-list h4 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.folders-list li {
+  margin-bottom: .5em;
+  font-size: 1.1em;
+}
+.folders-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.folders-list a.current {
+  color: #fe862c;
+}
+
+@media (max-width: 776px) {
+  .folders-list {
+    display: none;
+  }
+}
+.folder-header {
+  margin-bottom: 2em;
+}
+.folder-header h1,
+.folder-header .edit-folder-link {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.folder-header h1 {
+  text-transform: uppercase;
+  font-size: 1.75em;
+}
+
+.edit-folder-link {
+  margin-left: .5em;
+  color: inherit;
+  text-decoration: none;
+  font-size: .9em;
+  opacity: .5;
+}
+
+.add-more-link {
+  font-family: "Noto Serif", Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  text-decoration: none;
+}
