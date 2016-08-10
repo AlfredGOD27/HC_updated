@@ -290,7 +290,7 @@ function hc_ga_content_grouping() {
 		$cat = '(not set)';
 	 
 		if ( $wp_query->is_page && $wp_query->is_front_page ) {
-			$cat = 'Home Page';
+			$cat = 'HomePage';
 		} elseif ( $wp_query->is_page()) {
 			$cat = is_page('calendar') ? 'Calendar' : 'Page';
 		} elseif ( $wp_query->is_home ) {
@@ -308,7 +308,6 @@ function hc_ga_content_grouping() {
 		} elseif ( $wp_query->is_404 ) {
 			$cat = '404 Page';
 		}
-	 
 		return $cat;
 	}
 	?>
